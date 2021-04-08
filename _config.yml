@@ -2,14 +2,14 @@
 title:               'Today I Learned'
 tagline:             'Notes to self about software development'
 description:         ''
-url:                 https://appdev-projects.github.io/
+url:                 https://agustinbooth.github.io/
 baseurl:             'til/'
 paginate:            5
 permalink:           pretty
 
 # About/contact
 author:
-  name:              Raghu Betina
+  name:              Agustin Valenzuela
   url:               https://twitter.com/raghubetina
   email:             raghu@firstdraft.com
 
