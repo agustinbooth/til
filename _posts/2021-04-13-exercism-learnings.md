@@ -1,4 +1,4 @@
-# What I learned from exercism
+## What I learned from exercism
 
 ### Acronym
 Everything that is not a word is regex /W/ and take out spaces in an Array
