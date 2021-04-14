@@ -1,6 +1,6 @@
 ## Useful things from refractoring
 
-# Routes
+### Routes
 
 routes can be simplified by writing this way: (root is index page)
 
@@ -32,7 +32,7 @@ instead of using "a href" we can use /link_to/ (rails can figure almost all the 
    <%= link_to "Add a new movie", new_movie_path %>
    <%= link_to 'Edit movie', edit_movie_path %>
  ```
- # Render
+ ### Render
  
  We can take out almost all render code if we are conventional
  
@@ -40,7 +40,7 @@ instead of using "a href" we can use /link_to/ (rails can figure almost all the 
  #Example
  render "new"
  ```
-# Forms
+### Forms
 
 We can simplify and improve forms with form_with
 
@@ -62,3 +62,17 @@ We can replate tags, inputs and buttons with:
     
     <%= button_tag "Create movie" %>
 ```
+
+We can bundle forms using:
+
+```
+name= zebra[]
+name=zebra[elephant]
+
+
+```
+### Controllers
+
+Use find or find_by to avoid using where(X).first
+
+
