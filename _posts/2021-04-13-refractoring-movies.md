@@ -40,3 +40,25 @@ instead of using "a href" we can use /link_to/ (rails can figure almost all the 
  #Example
  render "new"
  ```
+# Forms
+
+We can simplify and improve forms with form_with
+
+```
+<%= form_with(url: movies_path) do %>
+
+#something
+
+<% end %>
+```
+We can replate tags, inputs and buttons with:
+
+```
+    <%= label_tag :title_box, "Title"%>
+
+    <%= text_field_tag :query_title, @the_movie.title, id: "title_box" %> #this line replaces the nest line, the second argument is value
+
+    <input type="text" id="title_box" name="query_title" value="<%= @the_movie.title %>"
+    
+    <%= button_tag "Create movie" %>
+```
